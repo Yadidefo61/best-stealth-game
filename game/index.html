@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moonlit Vault — a top-down stealth game: slip past the museum guards, pocket three artifacts, reach the exit unseen.">
+<title>Moonlit Vault — a stealth game</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #0a0c14;
+    overflow: hidden;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif;
+  }
+  #game {
+    width: 100vw; height: 100vh;
+    display: block;
+    image-rendering: auto;
+    cursor: crosshair;
+    background: #20242e;
+  }
+  #selftest {
+    position: fixed; left: 8px; bottom: 6px;
+    color: #8f96b0; font: 12px monospace; z-index: 2;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="640"></canvas>
+<div id="selftest"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
